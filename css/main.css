@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.backbody {
+  background-color: #ccfdff;
+  font-family: 'Mukta', sans-serif;
+  height: 200vh; }
+
+nav {
+  background-color: #002936;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; }
+  nav .hamb {
+    padding: 1rem; }
+    nav .hamb label img {
+      display: block;
+      cursor: pointer;
+      margin-right: 1rem; }
+    nav .hamb input {
+      display: none; }
+    nav .hamb ul {
+      display: none;
+      position: fixed;
+      top: 90px;
+      bottom: 0;
+      width: 100%;
+      height: 80%;
+      left: 0;
+      background-color: #054250;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      transition: 1s ease; }
+      nav .hamb ul li {
+        list-style: none; }
+        nav .hamb ul li a {
+          color: white;
+          font-weight: 500;
+          list-style: none;
+          text-decoration: none;
+          --clippy: polygon(0 0, 0 0, 0 100%, 0 100%); }
+          nav .hamb ul li a::after {
+            content: "";
+            display: block;
+            background-color: #ccfdff;
+            width: 90%;
+            height: 3px;
+            clip-path: var(--clippy);
+            transition: 0.5s; }
+          nav .hamb ul li a:hover {
+            --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            color: #ccfdff; }
+    nav .hamb input:checked + ul {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  nav .true-nav {
+    width: 100%;
+    height: 100%; }
+    nav .true-nav ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      nav .true-nav ul li {
+        margin: 0 1rem;
+        list-style: none; }
+        nav .true-nav ul li a {
+          font-size: 1.6rem;
+          text-decoration: none;
+          color: white;
+          font-weight: 500;
+          --clippy: polygon(0 0, 0 0, 0 100%, 0 100%); }
+          nav .true-nav ul li a::after {
+            content: "";
+            display: block;
+            background-color: #177988;
+            width: 90%;
+            height: 3px;
+            clip-path: var(--clippy);
+            transition: 0.5s; }
+          nav .true-nav ul li a:hover {
+            --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            color: #177988; }
+  nav .logo {
+    padding: 1rem; }
+    nav .logo a img {
+      width: 60px;
+      transition: 0.3s; }
+      nav .logo a img:hover {
+        transform: scale(1.15); }
+
+@media screen and (max-width: 763px) {
+  nav .true-nav ul li a {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 376px) {
+  nav .true-nav ul {
+    width: 140px; } }
