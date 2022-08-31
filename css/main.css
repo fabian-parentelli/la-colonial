@@ -156,3 +156,130 @@ header {
   header .h1-contacto {
     margin-top: 0;
     transform: translateY(-10px); } }
+
+main {
+  width: 100%; }
+  main .carru {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    main .carru > div {
+      width: 90%; }
+  main h2 {
+    margin: 2rem 0 0 3.5rem;
+    font-size: 4rem;
+    font-weight: 900; }
+
+.tarjetas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .tarjetas .tarjeta {
+    width: 300px;
+    background-color: #177988;
+    margin: 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .tarjetas .tarjeta img {
+      width: 220px;
+      height: 400px;
+      object-fit: contain;
+      margin-top: 1rem; }
+    .tarjetas .tarjeta .desc {
+      width: 100%;
+      height: 110px;
+      margin-top: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      background-color: #054250;
+      padding: 8px 16px 16px 16px; }
+      .tarjetas .tarjeta .desc div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .tarjetas .tarjeta .desc div p {
+          color: white;
+          margin: 0 0 0 0; }
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #002936;
+  margin-top: 2rem; }
+  footer .telefonos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .telefonos .tel-l {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem;
+      margin-top: 2rem; }
+      footer .telefonos .tel-l div {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 1rem; }
+        footer .telefonos .tel-l div h3 {
+          font-weight: 500;
+          font-size: 1rem;
+          transform: translateY(12px); }
+        footer .telefonos .tel-l div p {
+          font-size: 1rem;
+          font-weight: 500;
+          text-align: left;
+          transform: translateY(7px); }
+      footer .telefonos .tel-l img {
+        object-fit: contain;
+        width: 50px; }
+    footer .telefonos .tel-r {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem;
+      margin-top: 2rem; }
+      footer .telefonos .tel-r div {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0 1rem; }
+        footer .telefonos .tel-r div h3 {
+          font-size: 1rem;
+          font-weight: 500;
+          transform: translatey(12px); }
+        footer .telefonos .tel-r div p {
+          font-size: 1rem;
+          font-weight: 500;
+          text-align: right;
+          transform: translateY(7px); }
+      footer .telefonos .tel-r img {
+        object-fit: contain;
+        width: 50px; }
+  footer .yo {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column; }
+
+@media screen and (max-width: 769px) {
+  .yo {
+    margin-top: 1rem; } }
+
+@media screen and (max-width: 376px) {
+  .telefonos {
+    flex-direction: column; } }

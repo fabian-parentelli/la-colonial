@@ -36,10 +36,10 @@
 
                 <ul>
                     <li>
-                        <a href="">Snack</a>
+                        <a href="#snacks">Snacks</a>
                     </li>
                     <li>
-                        <a href="">Almacén</a>
+                        <a href="#almacen">Almacén</a>
                     </li>
                     <li>
                         <a href="">Fiambres</a>
@@ -88,23 +88,514 @@
         <header>
             <div>
                 <img src="asset/lupa.png" alt="lupa">
-                <input type="search" placeholder="busqueda"> 
+                <input type="search" placeholder="busqueda">
             </div>
             <h1>La Colonial</h1>
         </header>
 
+        <main>
+            <!-- Carrusel -->
+            <section class="carru">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="photo/oferta-1.jfif" class="d-block w-100" alt="oferta-1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="photo/oferta-2.jpg" class="d-block w-100" alt="oferta-2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Snack -->
+            <h2 id="snacks">Snacks</h2>
+
+            <section class="tarjetas">
+                <!-- CT -->
+                <div class="tarjeta">
+                    <img src="photo/snack-cta.png" alt="ct">
+                    <div class="desc">
+                        <div>
+                            <p>Tradicional 550gr</p>
+                            <p>$688.54</p>
+                        </div>
+                        <div>
+                            <p>Tradicional 110gr</p>
+                            <p>$233.57</p>
+                        </div>
+                        <div>
+                            <p>Tradicional 60gr</p>
+                            <p>$126.43</p>
+                        </div>
+                        <div>
+                            <p>Tradicional 30gr</p>
+                            <p>$126.43</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CA -->
+                <div class="tarjeta">
+                    <img src="photo/snack-ca.png" alt="ca">
+                    <div class="desc">
+                        <div>
+                            <p>Americana 550gr</p>
+                            <p>$668.54</p>
+                        </div>
+                        <div>
+                            <p>Americana 110gr</p>
+                            <p>$233.57</p>
+                        </div>
+                        <div>
+                            <p>Americana 60gr
+                            <p>
+                            <p>$126.43</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- PQ -->
+                <div class="tarjeta">
+                    <img src="photo/snack-pq.png" alt="pq">
+                    <div class="desc">
+                        <div>
+                            <p>Chizito 400gr</p>
+                            <p>$512.20</p>
+                        </div>
+                        <div>
+                            <p>Chizito 60gr</p>
+                            <p>$117.75</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BQ -->
+                <div class="tarjeta">
+                    <img src="photo/snack-bq.png" alt="bq">
+                    <div class="desc">
+                        <div>
+                            <p>Bastonito 300gr</p>
+                            <p>$437.74</p>
+                        </div>
+                        <div>
+                            <p>Bastonito 55gr</p>
+                            <p>$91.25</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- PS -->
+                <div class="tarjeta">
+                    <img src="photo/snack-ps.png" alt="ps">
+                    <div class="desc">
+                        <div>
+                            <p>Palito Salado 800gr</p>
+                            <p>$836.97</p>
+                        </div>
+                        <div>
+                            <p>Palito Salado 120gr</p>
+                            <p>$146.86</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- MS -->
+                <div class="tarjeta">
+                    <img src="photo/snack-ms.png" alt="ms">
+                    <div class="desc">
+                        <div>
+                            <p>Mani Salado 500gr</p>
+                            <p>$633.79</p>
+                        </div>
+                        <div>
+                            <p>Palito Salado 120gr</p>
+                            <p>$170.48</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Papas pay -->
+                <div class="tarjeta">
+                    <img src="photo/snack-py.png" alt="py">
+                    <div class="desc">
+                        <div>
+                            <p>Pay 60gr</p>
+                            <p>$127.36</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Papas Ketchup -->
+                <div class="tarjeta">
+                    <img src="photo/snack-ketchup.png" alt="ca-ketchup">
+                    <div class="desc">
+                        <div>
+                            <p>Ketchup 55gr</p>
+                            <p>$154.19</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Papas Jamon -->
+                <div class="tarjeta">
+                    <img src="photo/snack-jamon.png" alt="ct-jamon">
+                    <div class="desc">
+                        <div>
+                            <p>Jamon 55gr</p>
+                            <p>$154.19</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Papas cheddar -->
+                <div class="tarjeta">
+                    <img src="photo/snack-cheddar.png" alt="ct-cheddar">
+                    <div class="desc">
+                        <div>
+                            <p>Cheddar 350gr</p>
+                            <p>$603.81</p>
+                        </div>
+                        <div>
+                            <p>Cheddar 350gr</p>
+                            <p>$154.19</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Super Cono -->
+                <div class="tarjeta">
+                    <img src="photo/snack-sc.png" alt="sc">
+                    <div class="desc">
+                        <div>
+                            <p>Super Cono 50gr</p>
+                            <p>$100.28</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fronty Corovante -->
+                <div class="tarjeta">
+                    <img src="photo/snack-frontymc.png" alt="Fronty-mcc">
+                    <div class="desc">
+                        <div>
+                            <p>Mani C/Cascara</p>
+                            <p>$439.3</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fronty Mani salado -->
+                <div class="tarjeta">
+                    <img src="photo/snack-frontms.png" alt="Fronty-ms">
+                    <div class="desc">
+                        <div>
+                            <p>Mani Salado</p>
+                            <p>$439.3
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mani Saborizados -->
+                <div class="tarjeta">
+                    <img src="photo/snack-frontymssaborizado.png" alt="Fronty-saborizado">
+                    <div class="desc">
+                        <div>
+                            <p>Mani Pizza</p>
+                            <p>$439.3</p>
+                        </div>
+                        <div>
+                            <p>Mani Jamón</p>
+                            <p>$439.3</p>
+                        </div>
+                        <div>
+                            <p>Mani Queso</p>
+                            <p>$439.3</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Frontys palitos Salados  -->
+                <div class="tarjeta">
+                    <img src="photo/snack-frontyps.png" alt="Fronty-ps">
+                    <div class="desc">
+                        <div>
+                            <p>Palito Salado 700gr</p>
+                            <p>$439.3</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Frontys Mani sin Sal -->
+                <div class="tarjeta">
+                    <img src="photo/sanck-frontimss.png" alt="fronty-maniss">
+                    <div class="desc">
+                        <div>
+                            <p>Mani Sin Sal 800gr</p>
+                            <p>$493.36</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fronty Vaina -->      
+                <div class="tarjeta">
+                    <img src="photo/snack-frontyvaina.png" alt="Fronty-vaina">
+                    <div class="desc">
+                        <div>
+                            <p>Mani Vaina 800gr</p>
+                            <p>$493.36</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- mani Crocante -->      
+                <div class="tarjeta">
+                    <img src="photo/sanck-frontmc.png" alt="fronty-Clasico">
+                    <div class="desc">
+                        <div>
+                            <p>Clasico 800gr</p>
+                            <p>$493.36</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- nachos -->      
+                <div class="tarjeta">
+                    <img src="photo/sanck-nachos.png" alt="nachos">
+                    <div class="desc">
+                        <div>
+                            <p>Nachos 90gr</p>
+                            <p>$115.09</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pay Peipo -->      
+                <div class="tarjeta">
+                    <img src="photo/peipo-papas_pay.png" alt="Papas-peipopay">
+                    <div class="desc">
+                        <div>
+                            <p>Papas Pay Peipo 500gr</p>
+                            <p>$583.44</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Almacèn -->
+            <h2 id="almacen">Almacén</h2>
+            
+            <section class="tarjetas">
+                <!-- Educlorante -->      
+                <div class="tarjeta">
+                    <img src="photo/al-edulcorante.png" alt="al-edulcorante">
+                    <div class="desc">
+                        <div>
+                            <p>Hileret 200cc</p>
+                            <p>$191.88</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Azucar -->      
+                <div class="tarjeta">
+                    <img src="photo/al-azucar.png" alt="azucar">
+                    <div class="desc">
+                        <div>
+                            <p>Azucar 1kg</p>
+                            <p>$217.80</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- sal Fina Marolio -->
+                <div class="tarjeta">
+                    <img src="photo/al-salfinamarolio.png" alt="sal-fina-marolio">
+                    <div class="desc">
+                        <div>
+                            <p>Sal Fina Marolio 500gr</p>
+                            <p>$75.90</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sal Fina el Dique -->
+                <div class="tarjeta">
+                    <img src="photo/al-salfinaeldique.png" alt="sal-fina-eldique">
+                    <div class="desc">
+                        <div>
+                            <p>Sal Fina El Dique 500gr</p>
+                            <p>$58.89</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- sal fina celusal -->
+                <div class="tarjeta">
+                    <img src="photo/al-salfinacelusal.png" alt="sal-fina-celusal">
+                    <div class="desc">
+                        <div>
+                            <p>Sal Fina Celusal 500gr</p>
+                            <p>$89.88</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sal gruesa Celusal -->
+                <div class="tarjeta">
+                    <img src="photo/al-salgruesacelusal.png" alt="sal-gruesa-celusal">
+                    <div class="desc">
+                        <div>
+                            <p>Sal Gruesa Celusal 500gr</p>
+                            <p>$65.88</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- sal Gruesa Marolio -->
+                <div class="tarjeta">
+                    <img src="photo/al-salgruesamarolio.png" alt="sal-gruesa-marolio">
+                    <div class="desc">
+                        <div>
+                            <p>Sal Gruesa Marolio 1kg</p>
+                            <p>$81.31</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Caldos Knoor -->
+                <div class="tarjeta">
+                    <img src="photo/al-caldoknoor.png" alt="caldo-knoor">
+                    <div class="desc">
+                        <div>
+                            <p>Caldo Knoor Gallina 2x24</p>
+                            <p>$37.07</p>
+                        </div>
+                        <div>
+                            <p>Caldo Knoor Verdura 2x24</p>
+                            <p>$37.07</p>
+                        </div>
+                        <div>
+                            <p>Caldo Knoor Carne 2x24</p>
+                            <p>$37.07</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pure Papas Marolio -->
+                <div class="tarjeta">
+                    <img src="photo/al-purepapasmarolio.png" alt="pure-papas-marolio">
+                    <div class="desc">
+                        <div>
+                            <p>Pure Papas Marolio 125gr</p>
+                            <p>$149.88</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pure Papas Maggic -->
+                <div class="tarjeta">
+                    <img src="photo/al-purepapasmaggic.png" alt="pure-papas-maggic">
+                    <div class="desc">
+                        <div>
+                            <p>Pure de Papas Maggic 125gr</p>
+                            <p>$149.88</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grasa Esani -->
+                <div class="tarjeta">
+                    <img src="photo/al-grasaesani.png" alt="Grasa-essani">
+                    <div class="desc">
+                        <div>
+                            <p>Grasa Vacuna 500gr</p>
+                            <p>$268.98</p>
+                        </div>
+                        <div>
+                            <p>Grasa porcina 500gr</p>
+                            <p>$286.04</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jugo Limon Marolio -->
+                <div class="tarjeta">
+                    <img src="photo/al-jugolimon.png" alt="jugo-limon-marolio">
+                    <div class="desc">
+                        <div>
+                            <p>Jugo Limon Marolio 250cc</p>
+                            <p>$89</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- esencia de Vainilla -->
+                <div class="tarjeta">
+                    <img src="photo/al-esenciadevainilla.png" alt="esencia-de-vainilla">
+                    <div class="desc">
+                        <div>
+                            <p>Esencia de Vainilla Thaití</p>
+                            <p>$159.58</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Aceite Pureza -->
+                <div class="tarjeta">
+                    <img src="photo/al-aceitepureza.png" alt="aceite-pureza">
+                    <div class="desc">
+                        <div>
+                            <p>Aceite Pureza 900cc</p>
+                            <p>$539.88</p>
+                        </div>
+                        <div>
+                            <p>Aceite Pureza 1.5ltr</p>
+                            <p>$791.88</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Aceite Marolio -->
+                <div class="tarjeta">
+                    <img src="photo/al-aceitemarolio.png" alt="aceite-marolio">
+                    <div class="desc">
+                        <div>
+                            <p>Aceite Marolio 900cc</p>
+                            <p>$299.88</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tarjeta">
+                    <img src="" alt="">
+                    <div class="desc">
+                        <div>
+                            <p></p>
+                            <p>$</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
 
 
+        <footer>
+            <div class="telefonos">
+                <!-- left -->
+                <section class="tel-l">
+                    <img src="asset/llamada-telefonica.png" alt="logo-what">
+                    <div>
+                        <h3>La Colonial</h3>
+                        <p>+54 9 11 5943 7955</p>
+                    </div>
+                </section>
 
-
-
-
-
+                <!-- Right -->
+                <section class="tel-r">
+                    <div>
+                        <h3>Erika</h3>
+                        <p>+54 9 11 5943 7955</p>
+                    </div>
+                    <img src="asset/llamada-telefonica.png" alt="logo-what">
+                </section>
+            </div>
+            <!-- Letras inferiores -->
+            <div class="yo">
+                <span>fabianparentelli007@hotmail.com</span>
+                <p>Desarrollador Web - Fabián Parentelli</p>
+            </div>
+        </footer>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

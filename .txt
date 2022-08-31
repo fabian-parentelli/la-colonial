@@ -1,2 +1,17 @@
 Página de colores
 https://paletadecolores.online/colors/1c8897/
+
+
+
+
+Tarjetas
+<!-- ... -->      
+<div class="tarjeta">
+    <img src="..." alt="...">
+    <div class="desc">
+        < div>
+            <p></p>
+            <p></p>
+         </div>
+    </div>
+</div>
