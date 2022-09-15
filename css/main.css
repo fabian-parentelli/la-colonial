@@ -17,108 +17,124 @@ nav {
   align-items: center;
   position: fixed;
   z-index: 999; }
-  nav .hamb {
-    padding: 1rem; }
-    nav .hamb label img {
-      display: block;
-      cursor: pointer;
-      margin-right: 1rem; }
-    nav .hamb input {
-      display: none; }
-    nav .hamb ul {
-      display: none;
-      position: fixed;
-      top: 90px;
-      bottom: 0;
-      width: 100%;
-      height: 80%;
-      left: 0;
-      background-color: #054250;
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
-      align-items: center;
-      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-      transition: 1s ease; }
-      nav .hamb ul li {
+  nav .up {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; }
+    nav .up .logo {
+      padding: 5px; }
+      nav .up .logo a img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 5px;
+        transition: 0.3s; }
+        nav .up .logo a img:hover {
+          transform: scale(1.15); }
+    nav .up .hamb {
+      padding: 5px; }
+      nav .up .hamb label img {
+        display: none; }
+      nav .up .hamb input {
+        display: none; }
+      nav .up .hamb ul {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 3rem;
+        margin-right: 1rem; }
+      nav .up .hamb li {
         list-style: none; }
-        nav .hamb ul li a {
+        nav .up .hamb li a {
           color: white;
+          font-size: 1.2rem;
           font-weight: 500;
           list-style: none;
           text-decoration: none;
           --clippy: polygon(0 0, 0 0, 0 100%, 0 100%); }
-          nav .hamb ul li a::after {
+          nav .up .hamb li a::after {
             content: "";
             display: block;
-            background-color: #ccfdff;
+            background-color: white;
             width: 90%;
             height: 3px;
+            margin-top: 1px;
             clip-path: var(--clippy);
             transition: 0.5s; }
-          nav .hamb ul li a:hover {
-            --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            color: #ccfdff; }
-    nav .hamb input:checked + ul {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-  nav .true-nav {
+          nav .up .hamb li a:hover {
+            --clippy: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+            color: white; }
+
+.down {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  z-index: 998;
+  background-color: #054250; }
+  .down .aa1 {
     width: 100%;
-    height: 100%; }
-    nav .true-nav ul {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      transform: translateX(-35px); }
-      nav .true-nav ul li {
-        margin: 0 1rem;
-        list-style: none; }
-        nav .true-nav ul li a {
-          font-size: 1.6rem;
-          text-decoration: none;
-          color: white;
-          font-weight: 500;
-          --clippy: polygon(0 0, 0 0, 0 100%, 0 100%); }
-          nav .true-nav ul li a::after {
-            content: "";
-            display: block;
-            background-color: #177988;
-            width: 90%;
-            height: 3px;
-            clip-path: var(--clippy);
-            transition: 0.5s; }
-          nav .true-nav ul li a:hover {
-            --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            color: #177988; }
-  nav .logo {
-    padding: 1rem; }
-    nav .logo a img {
-      width: 60px;
-      transition: 0.3s; }
-      nav .logo a img:hover {
-        transform: scale(1.15); }
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #054250;
+    margin: 0;
+    padding: 0; }
+    .down .aa1 li {
+      margin: 100px 6px 0 6px;
+      list-style: none; }
+      .down .aa1 li a {
+        text-decoration: none;
+        color: white; }
+        .down .aa1 li a:hover {
+          color: #002936; }
+  .down .aa2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #054250;
+    margin: 0;
+    padding: 0; }
+    .down .aa2 li {
+      list-style: none; }
+      .down .aa2 li a {
+        text-decoration: none;
+        color: white; }
+        .down .aa2 li a:hover {
+          color: #002936; }
 
-@media screen and (max-width: 763px) {
-  nav .true-nav ul {
-    text-align: center; }
-    nav .true-nav ul li a {
-      font-size: 1.2rem; }
-  .off {
-    display: none; }
-  .logo-1 {
-    transform: translateX(-20px); } }
-
-@media screen and (max-width: 376px) {
-  nav .true-nav ul {
-    transform: translateX(-35px);
-    width: 140px; }
-  .logo-1 {
-    transform: translateX(5px); } }
+/* Navegador - media query - 767px*/
+@media screen and (max-width: 767px) {
+  nav .up .hamb label img {
+    display: block;
+    cursor: pointer;
+    margin-right: 1rem; }
+  nav .up .hamb ul {
+    z-index: 9999;
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: #7fb1b4;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 1s ease-in-out; }
+  nav .up .hamb li {
+    color: black;
+    font-weight: 600; }
+    nav .up .hamb li a {
+      color: #002936;
+      font-weight: 600; }
+  nav .up .hamb input:checked + ul {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
 
 header {
   width: 100%;
-  height: 100%;
+  height: 65vh;
   padding-top: 120px;
   display: flex;
   flex-direction: column;
@@ -140,11 +156,11 @@ header {
   header h1 {
     font-weight: 800;
     font-style: italic;
-    font-size: 9rem; }
+    font-size: 6rem; }
 
 @media screen and (max-width: 769px) {
   header h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center; }
   header div input {
     width: 250px; } }
@@ -168,7 +184,7 @@ main {
       width: 90%; }
   main h2 {
     margin: 2rem 0 0 3.5rem;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 900; }
 
 .tarjetas {
