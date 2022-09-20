@@ -23,83 +23,121 @@
 
 <body>
     <div class="backbody">
-
         <!-- navegador -->
         <nav>
-            <!-- Hamburguesa -->
-            <div class="hamb">
-                <label for="productos">
-                    <img src="../asset/menu.png" alt="menu-lista">
-                </label>
-                <input type="checkbox" id="productos">
+            <section class="up">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../asset/logo.png" alt="logo-la-colonial">
+                    </a>
+                </div>
 
-                <ul>
-                    <li>
-                        <a href="">Snack</a>
-                    </li>
-                    <li>
-                        <a href="">Almacén</a>
-                    </li>
-                    <li>
-                        <a href="">Fiambres</a>
-                    </li>
-                    <li>
-                        <a href="">Quesos</a>
-                    </li>
-                    <li>
-                        <a href="">Limpieza</a>
-                    </li>
-                    <li>
-                        <a href="">Perfumería</a>
-                    </li>
-                    <li>
-                        <a href="">Polirrubro</a>
-                    </li>
-                    <li>
-                        <a href="">Estética</a>
-                    </li>
-                </ul>
-            </div>
+                <!-- Hamburguesa -->
+                <div class="hamb">
+                    <label for="productos">
+                        <img src="../asset/menu.png" width="50px" alt="menu-lista">
+                    </label>
+                    <input type="checkbox" id="productos">
 
-            <!-- Nav -->
-            <div class="true-nav">
-                <ul>
-                    <li>
-                        <a class="off" href="contatcto.html">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="../index.html">La Colonial</a>
-                    </li>
-                    <li>
-                        <a href="akire.html">Akire</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Logo -->
-            <div class="logo logo-1">
-                <a href="../index.html">
-                    <img src="../asset/logo.png" alt="logo-la-colonial">
-                </a>
-            </div>
+                    <ul>
+                        <li>
+                            <a class="off" href="../index.html">La Colonial</a>
+                        </li>
+                        <li>
+                            <a href="akire.html">Limpieza</a>
+                        </li>
+                        <li>
+                            <a href="contatcto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </nav>
 
+        <section class="down">
+            <ul class="aa1">
+                <li>
+                    <a href="../index.html #snacks">Snacks</a>
+                </li>
+                <li>
+                    <a href="../index.html #almacen">Almacén</a>
+                </li>
+                <li>
+                    <a href="../index.html #fiambres">Fiambres</a>
+                </li>
+                <li>
+                    <a href="../index.html #queso">Quesos</a>
+                </li>
+            </ul>
+            <ul class="aa2">
+                <li>
+                    <a href="akire.html #perfumeria">Perfumería</a>
+                </li>
+                <li>
+                    <a href="akire.html #limpieza">Limpieza</a>
+                </li>
+                <li>
+                    <a href="akire.html #polirrubro">Polirrubro</a>
+                </li>
+                <li>
+                    <a href="akire.html #varios">Varios</a>
+                </li>
+            </ul>
+        </section>
+
         <header>
-            <h1 class="h1-contacto">Contacto</h1>
+            <div>
+                <img src="../asset/lupa.png" alt="lupa">
+                <input type="search" placeholder="busqueda">
+            </div>
+            <h1>La Colonial</h1>
         </header>
 
-        <main>
-                
+        <!-- Formulario -->
+        <main class="cont">
+            <form id="form" action="" method="" enctype="">
+                <div>
+                    <input name="nombre" type="text" placeholder="Nombre">
+                    <input name="telefono" type="tel" placeholder="Teléfono">
+                </div>
+                <textarea name="Comentario" id="" cols="30" rows="10"></textarea>
+                <input class="botone" type="submit" value="Enviar">
+            </form>
         </main>
 
+        <a href="mailto:charruarecord@gmail.com" id="trucazo">mail</a>
+        
+        <footer>
+            <div class="telefonos">
+                <!-- left -->
+                <section class="tel-l">
+                    <img src="../asset/llamada-telefonica.png" alt="logo-what">
+                    <div>
+                        <h3>La Colonial</h3>
+                        <p>+54 9 11 5943 7955</p>
+                    </div>
+                </section>
 
-
-
-
-
+                <!-- Right -->
+                <section class="tel-r">
+                    <div>
+                        <h3>Fabián</h3>
+                        <p>+54 9 11 2266 3455</p>
+                    </div>
+                    <img src="../asset/llamada-telefonica.png" alt="logo-what">
+                </section>
+            </div>
+            <!-- Letras inferiores -->
+            <div class="yo">
+                <span>fabianparentelli007@hotmail.com</span>
+                <p>Desarrollador Web - Fabián Parentelli</p>
+            </div>
+        </footer>
 
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
 </body>
 </html>

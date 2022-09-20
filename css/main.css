@@ -75,7 +75,7 @@ nav {
   .down .aa1 {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-color: #054250;
     margin: 0;
@@ -91,7 +91,7 @@ nav {
   .down .aa2 {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-color: #054250;
     margin: 0;
@@ -194,7 +194,7 @@ main {
   justify-content: center;
   flex-wrap: wrap; }
   .tarjetas .tarjeta {
-    width: 300px;
+    width: 280px;
     background-color: #177988;
     margin: 1rem;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -206,7 +206,7 @@ main {
     align-items: center; }
     .tarjetas .tarjeta img {
       width: 220px;
-      height: 320px;
+      height: 300px;
       object-fit: contain;
       margin-top: 1rem; }
     .tarjetas .tarjeta .desc {
@@ -225,6 +225,38 @@ main {
         .tarjetas .tarjeta .desc div p {
           color: white;
           margin: 0 0 0 0; }
+
+.cont {
+  width: 100%;
+  display: flex;
+  margin-top: 4rem;
+  justify-content: center;
+  align-items: center; }
+  .cont form {
+    width: 300px;
+    display: flex;
+    flex-direction: column; }
+    .cont form div {
+      width: 100%; }
+      .cont form div input {
+        width: 100%;
+        border-radius: 0.4rem;
+        margin-bottom: 3px;
+        border: solid #002936;
+        text-indent: 5px; }
+    .cont form textarea {
+      height: 320px;
+      resize: none;
+      border-radius: 0.4rem;
+      border: solid #002936;
+      text-indent: 5px; }
+    .cont form .botone {
+      margin-top: 3px;
+      border: solid #002936;
+      border-radius: 0.4rem; }
+      .cont form .botone:hover {
+        color: white;
+        background-color: #054250; }
 
 footer {
   width: 100%;

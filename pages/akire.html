@@ -10,100 +10,792 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <!-- style css -->
     <link rel="stylesheet" href="../css/main.css">
 
     <!-- title -->
-    <title>Akire - Limpieza</title>
+    <title>La Colonial - Limpieza</title>
 </head>
 
 <body>
     <div class="backbody">
-
         <!-- navegador -->
         <nav>
-            <!-- Hamburguesa -->
-            <div class="hamb">
-                <label for="productos">
-                    <img src="../asset/menu.png" alt="menu-lista">
-                </label>
-                <input type="checkbox" id="productos">
+            <section class="up">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../asset/logo.png" alt="logo-la-colonial">
+                    </a>
+                </div>
 
-                <ul>
-                    <li>
-                        <a href="">Limpieza</a>
-                    </li>
-                    <li>
-                        <a href="">Perfumería</a>
-                    </li>
-                    <li>
-                        <a href="">Polirrubro</a>
-                    </li>
-                    <li>
-                        <a href="">Estética</a>
-                    </li>
-                    <li>
-                        <a href="">Mascotas</a>
-                    </li>
-                    <li>
-                        <a href="">Electrónica</a>
-                    </li>
-                    <li>
-                        <a href="">Juguetes</a>
-                    </li>
-                    <li>
-                        <a href="">Librería</a>
-                    </li>
-                </ul>
-            </div>
+                <!-- Hamburguesa -->
+                <div class="hamb">
+                    <label for="productos">
+                        <img src="asset/menu.png" width="50px" alt="menu-lista">
+                    </label>
+                    <input type="checkbox" id="productos">
 
-            <!-- Nav -->
-            <div class="true-nav">
-                <ul>
-                    <li>
-                        <a class="off" href="akire.html">Akire</a>
-                    </li>
-                    <li>
-                        <a href="../index.html">La Colonial</a>
-                    </li>
-                    <li>
-                        <a href="contatcto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Logo -->
-            <div class="logo logo-1">
-                <a href="../index.html">
-                    <img src="../asset/logo.png" alt="logo-la-colonial">
-                </a>
-            </div>
+                    <ul>
+                        <li>
+                            <a class="off" href="../index.html">La Colonial</a>
+                        </li>
+                        <li>
+                            <a href="akire.html">Limpieza</a>
+                        </li>
+                        <li>
+                            <a href="contatcto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </nav>
+
+
+        <section class="down">
+            <ul class="aa1">
+                <li>
+                    <a href="#perfumeria">Perfumería</a>
+                </li>
+                <li>
+                    <a href="#limpieza">Limpieza</a>
+                </li>
+                <li>
+                    <a href="#polirrubro">Polirrubro</a>
+                </li>
+                <li>
+                    <a href="#varios">Varios</a>
+                </li>
+            </ul>
+        </section>
 
         <header>
             <div>
                 <img src="../asset/lupa.png" alt="lupa">
-                <input type="search" placeholder="busqueda"> 
+                <input type="search" placeholder="busqueda">
             </div>
-            <h1>Akire</h1>
+            <h1>Limpieza y Perfumería</h1>
         </header>
 
         <main>
+            <!-- Carrusel -->
+            <section class="carru">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../photo/oferta-1.jfif" class="d-block w-100" alt="oferta-1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../photo/oferta-2.jpg" class="d-block w-100" alt="oferta-2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
 
-        </main> 
+            <!-- Perfumería - Perfumería - Perfumería - Perfumería - Perfumería - Perfumería - Perfumería -->
+            <h2 id="perfumeria">Perfumería</h2>
 
+            <section class="tarjetas">
+                <!-- Shampoo Sedal -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-shampooSedal.png" alt="shampoo-sedal">
+                    <div class="desc">
+                        <div>
+                            <p>Sedal Sh Restauración 190gr</p>
+                            <p>$229</p>
+                        </div>
+                        <div>
+                            <p>Sedal Sh Rizos Def. 190gr</p>
+                            <p>$229</p>
+                        </div>
+                        <div>
+                            <p>Sedal Sh Liso perfecto 190gr</p>
+                            <p>$229</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shampoo Sedal -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-shampoo2Sedal.png" alt="shampoo-sedal">
+                    <div class="desc">
+                        <div>
+                            <p>Sedal Sh Balance 190gr</p>
+                            <p>$229</p>
+                        </div>
+                        <div>
+                            <p>Sedal Sh Creamidas Def. 190gr</p>
+                            <p>$229</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Acondicionador -->
+                <div class="tarjeta">
+                    <img src="../photo/ak.crema2sedal.png" alt="acondicionador-sedal">
+                    <div class="desc">
+                        <div>
+                            <p>Sedal Ac Restauración 190gr</p>
+                            <p>$229</p>
+                        </div>
+                        <div>
+                            <p>Sedal Ac Rizos Def. 190gr</p>
+                            <p>$229</p>
+                        </div>
+                        <div>
+                            <p>Sedal Ac Liso perfecto 190gr</p>
+                            <p>$229</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Acondicionador -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-acondicionadorSedla.png" alt="acondicionador-sedal">
+                    <div class="desc">
+                        <div>
+                            <p>Sedal Ac Balance 190gr</p>
+                            <p>$229</p>
+                        </div>
+                        <div>
+                            <p>Sedal Ac Creamidas Def. 190gr</p>
+                            <p>$229</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Shampoo Plusbelle -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-shampooPlusbelle.png" alt="shampoo-plusbelle">
+                    <div class="desc">
+                        <div>
+                            <p>Shampoo Plusbelle 1lt</p>
+                            <p>$253</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Shampoo J&J -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-shampooj&j.png" alt="shampoo-J&J">
+                    <div class="desc">
+                        <div>
+                            <p>Shampoo J&J 200ml</p>
+                            <p>$410</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Desodorante Patrichs -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-desodorantePatrichs.png" alt="desodorante-Patrichs">
+                    <div class="desc">
+                        <div>
+                            <p>Patrichs Aviator 150ml</p>
+                            <p>$310</p>
+                        </div>
+                        <div>
+                            <p>Patrichs Grand Prix 150ml</p>
+                            <p>$310</p>
+                        </div>
+                        <div>
+                            <p>Patrichs Black Label 150ml</p>
+                            <p>$310</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Desodorante Ciel -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-desodoranteCiel.png" alt="desodorante-ciel">
+                    <div class="desc">
+                        <div>
+                            <p>Desdodorante Ciell</p>
+                            <p>$575</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desodorante Dove -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-desodoranteDove.png" alt="desodorante-dove">
+                    <div class="desc">
+                        <div>
+                            <p>Desodorante Dove</p>
+                            <p>$413</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Dentrifico Colgate -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-dentrificoColgate.png" alt="dentrifico-colgate">
+                    <div class="desc">
+                        <div>
+                            <p>Colgate Ultra Blanco 90gr</p>
+                            <p>$218</p>
+                        </div>
+                        <div>
+                            <p>Colgate Maxima Protec. 90gr</p>
+                            <p>$246</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tocador rexona -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-tocadorRexona.png" alt="tocador-rexona">
+                    <div class="desc">
+                        <div>
+                            <p>Rexona Sensible Fresh 125gr</p>
+                            <p>$115</p>
+                        </div>
+                        <div>
+                            <p>Rexona Cotton Fresh 125gr</p>
+                            <p>$115</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tocador Plusbelle -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-tocadorPlusbelle.png" alt="jabon-plusbelle">
+                    <div class="desc">
+                        <div>
+                            <p>Plusbelle Energía 125gr</p>
+                            <p>$139</p>
+                        </div>
+                        <div>
+                            <p>Plusbelle Frescura 125gr</p>
+                            <p>$139</p>
+                        </div>
+                        <div>
+                            <p>Plusbelle Belleza 125gr</p>
+                            <p>$139</p>
+                        </div>
+                        <div>
+                            <p>Plusbelle Relajación 125gr</p>
+                            <p>$139</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Algodoón Doncella -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-algodon.png" alt="algodon-doncella">
+                    <div class="desc">
+                        <div>
+                            <p>Algodoón Doncella 70gr</p>
+                            <p>$110</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Maquinita Bic Flex -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-maquinaBic.png" alt="bic-flex3">
+                    <div class="desc">
+                        <div>
+                            <p>Maquinita Bic Flex3</p>
+                            <p>$77</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Toallitas femeninas -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-toallitaLina.png" alt="toallitas-lina">
+                    <div class="desc">
+                        <div>
+                            <p>Toallitas Lina 8un</p>
+                            <p>$115</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Limpieza - limpíeza - limpieza - limpieza - limpieza - limpieza - limpieza - limpieza -->
+            <h2 id="limpieza">Limpieza</h2>
+
+            <section class="tarjetas">
+                <!-- Magistral -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-magistral.png" alt="magistral">
+                    <div class="desc">
+                        <div>
+                            <p>Detergente Magistral 500</p>
+                            <p>$425</p>
+                        </div>
+                        <div>
+                            <p>Detergente Magistral 215</p>
+                            <p>$184</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Detergente Esencial -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-detergenteEsencual.png" alt="detergente-esencial">
+                    <div class="desc">
+                        <div>
+                            <p>Det Esencial Limón 750</p>
+                            <p>$115</p>
+                        </div>
+                        <div>
+                            <p>Det Esnecial Hierbeas 750</p>
+                            <p>$115</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lavandina Ayudín -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-lavandinaAyudin.png" alt="lavandina-ayudin">
+                    <div class="desc">
+                        <div>
+                            <p>Lavandina Ayudín 2lt</p>
+                            <p>$202</p>
+                        </div>
+                        <div>
+                            <p>Lvandina Ayudín 1lt</p>
+                            <p>$000</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lavandina Tibú -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-lavandinatibu.png" alt="lavandina-tibu">
+                    <div class="desc">
+                        <div>
+                            <p>Lavandina Tibú 1lt</p>
+                            <p>$109</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lavandina Esencial -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-lavandinaesencial.png" alt="lavandina-esencial">
+                    <div class="desc">
+                        <div>
+                            <p>Lavandina Esencial 1lt</p>
+                            <p>$109</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desinfectante Ambiente Ayudín -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-desinfectanteAyudin.png" alt="desinfectante-ayudin">
+                    <div class="desc">
+                        <div>
+                            <p>Desinfectante Ayudin Clasico</p>
+                            <p>$258</p>
+                        </div>
+                        <div>
+                            <p>Desinfectante Ayudin Bebé</p>
+                            <p>$258</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desodorante de Piso Esencial -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-pisoEsencial.png" alt="piso-esencial">
+                    <div class="desc">
+                        <div>
+                            <p>Piso Esencial Fl. Tripocales</p>
+                            <p>$98</p>
+                        </div>
+                        <div>
+                            <p>Piso Esencial lavanda</p>
+                            <p>$98</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jabóon en Polvo ropa Ala -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-ropaAla.png" alt="ropa-ala">
+                    <div class="desc">
+                        <div>
+                            <p>Ala Matic 400gr</p>
+                            <p>$178</p>
+                        </div>
+                        <div>
+                            <p>Ala Regular 400gr</p>
+                            <p>$178</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jabóon en Pan Ropa Zorro -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-ropaPanZorro.png" alt="ropa-panZorro">
+                    <div class="desc">
+                        <div>
+                            <p>Jabon Pan Zorro (Ropa)</p>
+                            <p>$80</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Esponja Cocina Esencial -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-esponjaEsencial.png" alt="esponja-esencial">
+                    <div class="desc">
+                        <div>
+                            <p>Esponja Cocina Esencial</p>
+                            <p>$77</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Limpia vidrio Zorro -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-vidrioZorro.png" alt="vidrio-zorro">
+                    <div class="desc">
+                        <div>
+                            <p>Limpiador vidrio Zorro</p>
+                            <p>$298</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rollo Cocina Esencial -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-rolloEsencial.png" alt="rollo-esencial">
+                    <div class="desc">
+                        <div>
+                            <p>Rollo Cocina Esencial</p>
+                            <p>$264</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rollo Cocina Sussex -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-rollosussex.png" alt="rollo-sussex">
+                    <div class="desc">
+                        <div>
+                            <p>Rollo Cocina Sussex</p>
+                            <p>$230</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Papel Higiénico Esencial -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-papelHigienicoEsencial.png" alt="higienico-esencial">
+                    <div class="desc">
+                        <div>
+                            <p>Texturado 6x30m</p>
+                            <p>$322</p>
+                        </div>
+                        <div>
+                            <p>Texturado 4x30m</p>
+                            <p>$218</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Polirrubro - Polirrubro - polirrubro - polirrubro - polirrubro - polirrubro  -->
+            <h2 id="polirrubro">Polirrubro</h2>
+
+            <section class="tarjetas">
+                <!-- esponja de acero -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-esponjaAcero.png" alt="esponja-acero">
+                    <div class="desc">
+                        <div>
+                            <p>Esponja de Acero</p>
+                            <p>$65.97</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- rejila -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-rejilla.png" alt="rejilla-cocina">
+                    <div class="desc">
+                        <div>
+                            <p>Rejilla de Cocina</p>
+                            <p>$154.45</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gunates Mágicos -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-gunates.png" alt="guantes-magicos">
+                    <div class="desc">
+                        <div>
+                            <p>Guantes Mágicos</p>
+                            <p>$193</p>
+                        </div>
+                        <div>
+                            <p>Guantes Violeta</p>
+                            <p>$193</p>
+                        </div>
+                        <div>
+                            <p>Guantes C/Raya</p>
+                            <p>$193</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Billetera -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-billetera.png" alt="billetera">
+                    <div class="desc">
+                        <div>
+                            <p>Billetera c/cierre</p>
+                            <p>$350</p>
+                        </div>
+                        <div>
+                            <p>Billetera c/botón</p>
+                            <p>$350</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- paraguas negro -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-paraguas.png" alt="paraguas">
+                    <div class="desc">
+                        <div>
+                            <p>Mini Paraguas</p>
+                            <p>$657</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Llavero Corazon -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-llaveroCorazon.png" alt="llavero-corazon">
+                    <div class="desc">
+                        <div>
+                            <p>Llavero Corazon</p>
+                            <p>$157</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Llavero Cubo Mágico -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-llavero-cubo.png" alt="llavero-cubo">
+                    <div class="desc">
+                        <div>
+                            <p>LLavero Cubo Mágico</p>
+                            <p>$157</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Palillos Ropa -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-palilloRopa.png" alt="broche-ropa">
+                    <div class="desc">
+                        <div>
+                            <p>Broche Ropa</p>
+                            <p>$135</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tapon de Termo -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-taponTermo.png" alt="tapon-termo">
+                    <div class="desc">
+                        <div>
+                            <p>Tapón de termo</p>
+                            <p>$319</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bengalas - Cumpleaños -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-bengalas.png" alt="bengalas-cumpleaño">
+                    <div class="desc">
+                        <div>
+                            <p>Bengalas Cumpleaños 4unid</p>
+                            <p>$322</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Velas Numéricas -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-velasNumericas.png" alt="velas-numericas">
+                    <div class="desc">
+                        <div>
+                            <p>Vela Numero 4</p>
+                            <p>$115</p>
+                        </div>
+                        <div>
+                            <p>Vela Numero 7</p>
+                            <p>$115</p>
+                        </div>
+                        <div>
+                            <p>Vela Numero 8</p>
+                            <p>$115</p>
+                        </div>
+                        <div>
+                            <p>Vela Numero 9</p>
+                            <p>$115</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Piloto Infantil -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-pilotoInfantil.png" alt="piloto-infantil">
+                    <div class="desc">
+                        <div>
+                            <p>Piloto Infantil</p>
+                            <p>$839</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Canasta Agujas -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-kitAgujas.png" alt="agujas-canasta">
+                    <div class="desc">
+                        <div>
+                            <p>Canasta Agujas</p>
+                            <p>$52</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Centimetro Modista -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-centimetroModista.png" alt="centimetro-modista">
+                    <div class="desc">
+                        <div>
+                            <p>Centimetro Modista</p>
+                            <p>$101</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kit Costura -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-kitModista.png" alt="kit-costura">
+                    <div class="desc">
+                        <div>
+                            <p>Kit de Costura</p>
+                            <p>$208</p>
+                        </div>
+                    </div>
+                </div>
+            </section>    
+
+            <!-- Varios - varios - varios - varios - varios - varios - varios - varios - varios  -->
+            <h2 id="varios">Varios</h2>
+
+            <section class="tarjetas">
+                <!-- Pinza de depilar -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-pinzaDepilar.png" alt="pinza-depilar">
+                    <div class="desc">
+                        <div>
+                            <p>Pinza de Depilar 12unid</p>
+                            <p>$442</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Alicate Uña o Cuticulas -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-alicate.png" alt="Alicate">
+                    <div class="desc">
+                        <div>
+                            <p>Alicate para Uñas y Cutículas</p>
+                            <p>$467</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hebillas Invisibles -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-Invisibles.png" alt="hebilla-invisibles">
+                    <div class="desc">
+                        <div>
+                            <p>Invisibles x 60 chicos</p>
+                            <p>$110</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lamparita esencial -->
+                <div class="tarjeta">
+                    <img src="../photo/ak-lamparaEsencial.png" alt="lampara-esencial">
+                    <div class="desc">
+                        <div>
+                            <p>Lampara Esencial 7w</p>
+                            <p>$178</p>
+                        </div>
+                        <div>
+                            <p>Lampara Esencial 9w</p>
+                            <p>$184</p>
+                        </div>
+                        <div>
+                            <p>Lampara Esencial 12w</p>
+                            <p>$253</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="telefonos">
+                <!-- left -->
+                <section class="tel-l">
+                    <img src="../asset/llamada-telefonica.png" alt="logo-what">
+                    <div>
+                        <h3>La Colonial</h3>
+                        <p>+54 9 11 5943 7955</p>
+                    </div>
+                </section>
+
+                <!-- Right -->
+                <section class="tel-r">
+                    <div>
+                        <h3>Fabián</h3>
+                        <p>+54 9 11 2266 3455</p>
+                    </div>
+                    <img src="../asset/llamada-telefonica.png" alt="logo-what">
+                </section>
+            </div>
+            <!-- Letras inferiores -->
+            <div class="yo">
+                <span>fabianparentelli007@hotmail.com</span>
+                <p>Desarrollador Web - Fabián Parentelli</p>
+            </div>
+        </footer>
     </div>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
