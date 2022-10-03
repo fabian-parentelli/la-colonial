@@ -87,7 +87,8 @@ nav {
         text-decoration: none;
         color: white; }
         .down .aa1 li a:hover {
-          color: #002936; }
+          color: #002936;
+          transition: 0.4s; }
   .down .aa2 {
     width: 100%;
     display: flex;
@@ -102,7 +103,8 @@ nav {
         text-decoration: none;
         color: white; }
         .down .aa2 li a:hover {
-          color: #002936; }
+          color: #002936;
+          transition: 0.4s; }
 
 /* Navegador - media query - 767px*/
 @media screen and (max-width: 767px) {
@@ -182,7 +184,7 @@ main {
     align-items: center;
     justify-content: center; }
     main .carru > div {
-      width: 90%; }
+      width: 80%; }
   main h2 {
     margin: 2rem 0 0 3.5rem;
     font-size: 2rem;
@@ -256,7 +258,11 @@ main {
       border-radius: 0.4rem; }
       .cont form .botone:hover {
         color: white;
-        background-color: #054250; }
+        background-color: #054250;
+        transition: 0.5s; }
+
+#trucazo {
+  opacity: 0; }
 
 footer {
   width: 100%;
@@ -291,9 +297,12 @@ footer {
           font-weight: 500;
           text-align: left;
           transform: translateY(7px); }
-      footer .telefonos .tel-l img {
+      footer .telefonos .tel-l a img {
         object-fit: contain;
         width: 50px; }
+      footer .telefonos .tel-l a:hover {
+        transform: scale(1.15);
+        transition: 0.4s; }
     footer .telefonos .tel-r {
       display: flex;
       justify-content: center;
@@ -315,9 +324,12 @@ footer {
           font-weight: 500;
           text-align: right;
           transform: translateY(7px); }
-      footer .telefonos .tel-r img {
+      footer .telefonos .tel-r a img {
         object-fit: contain;
         width: 50px; }
+      footer .telefonos .tel-r a:hover {
+        transform: scale(1.15);
+        transition: 0.4s; }
   footer .yo {
     color: white;
     text-align: center;

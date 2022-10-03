@@ -1,11 +1,19 @@
 const $form = document.querySelector("#form");
-const $buttonMailto = document.querySelector("#trucazo"); 
 
-$form.addEventListener("submit", handleSubmite);
-function handleSubmite(event) {
-    event.preventDefault();
+$form.addEventListener("submit", handleSubmit);
+
+async function handleSubmit(event) {
+    event.preventDeFault();
     const form = new FormData(this);
-    console.log(form.get("nombre"));
-    $buttonMailto.setAttribute("href", `mailtoo:charruarecord@gmail.com? subject= ${form.get("nombre")} ${form.get("telefono")}&body=${form.get("comentario")}`)
-    $buttonMailto.click()
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            "acept": "application/jsom"
+        }
+    })
+    if (response.ok) {
+        this.reset ();
+        alert("gracias por comunicarte con nosotros, pronto nos contactaremos");
+    }
 }

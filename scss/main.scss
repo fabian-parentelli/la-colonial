@@ -9,7 +9,7 @@ main {
         justify-content: center;
 
         >div {
-            width: 90%;
+            width: 80%;
         }
     }
 
@@ -99,12 +99,13 @@ main {
             &:hover {
                 color: white;
                 background-color: $color-4;
+                transition: 0.5s;
             }
         }
     }
 }
 #trucazo {
-    // opacity: 0;
+    opacity: 0;
 }
 
 

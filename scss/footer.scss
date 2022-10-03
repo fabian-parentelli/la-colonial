@@ -35,10 +35,16 @@ footer {
                     transform: translateY(7px);
                 }
             }
-            img {
+            a {
+                img {
                 object-fit: contain;
-                width: 50px;
-            }
+                width: 50px;   
+                }
+                &:hover {
+                    transform: scale(1.15);
+                    transition: 0.4s;
+                }
+            }    
         }
         .tel-r {
             display: flex;
@@ -64,11 +70,17 @@ footer {
                     transform: translateY(7px);
                 }
             }
-            img {
+            a {
+                img {
                 object-fit: contain;
                 width: 50px;
-            }
-        }
+                }
+                &:hover {
+                    transform: scale(1.15);
+                    transition: 0.4s;
+                }
+            }    
+        }   
     }
     .yo {
         color: white;
